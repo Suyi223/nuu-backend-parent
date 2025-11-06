@@ -1,0 +1,9 @@
+nuu:
+  base:
+    package-name: com.nuu
+
+spring:
+  application:
+    name: nuu-app-server
+  messages:
+    basename: i18n.messages

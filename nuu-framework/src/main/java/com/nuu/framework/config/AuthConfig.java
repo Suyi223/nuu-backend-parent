@@ -9,14 +9,15 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 /**
  * 接口拦截鉴权配置
  *
- * @Author Suyi
- * @Date 2025/11/2
+ * @author Suyi
  **/
 @Configuration
-public class AuthConfigure implements WebMvcConfigurer {
+public class AuthConfig implements WebMvcConfigurer {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(new SaInterceptor(handler -> StpUtil.checkLogin())).addPathPatterns("/**");
+        registry.addInterceptor(new SaInterceptor(handler -> {
+            StpUtil.checkLogin();
+        })).addPathPatterns("/**");
     }
 }

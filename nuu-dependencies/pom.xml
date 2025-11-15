@@ -15,6 +15,7 @@
         <mybatis.plus.version>3.5.14</mybatis.plus.version>
         <postgre.sql.driver.version>42.7.8</postgre.sql.driver.version>
         <sa.token.version>1.44.0</sa.token.version>
+        <hutool.version>5.8.41</hutool.version>
     </properties>
 
     <dependencyManagement>
@@ -41,7 +42,11 @@
                 <artifactId>sa-token-spring-boot3-starter</artifactId>
                 <version>${sa.token.version}</version>
             </dependency>
-
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 

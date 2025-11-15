@@ -1,6 +1,14 @@
 nuu:
   base:
     package-name: com.nuu
+  i18n:
+    # 默认语言
+    default: zh-CN
+
+server:
+  port: 9100
+  servlet:
+    context-path: ""
 
 spring:
   application:

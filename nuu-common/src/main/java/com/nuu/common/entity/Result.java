@@ -8,8 +8,7 @@ import java.io.Serializable;
 /**
  * 通用HTTP响应结果类
  *
- * @Author Suyi
- * @Date 2025/11/5
+ * @author Suyi
  **/
 @Data
 public class Result<T> implements Serializable {
